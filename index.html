@@ -1,18 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin Fashion</title>
     <!-- Tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google font - Bebas Neue & Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700;900&display=swap"
+        rel="stylesheet">
 
+    <!-- Font family class -->
+    <style>
+        .font-bebas {
+            font-family: "Bebas Neue", sans-serif;
+        }
+
+        .font-roboto {
+            font-family: "Roboto", sans-serif;
+        }
+    </style>
 </head>
+
 <body>
 
     <!-- Header -->
-    <header>
+    <header class="bg-[#FFFBF0]">
+        <div class="max-w-screen-lg	mx-auto">
+            <!-- Navbar -->
+            <section class="nav-container">
+                <div class="nav font-roboto flex justify-between pt-10">
+                    <img class="h-10" src="icons/logo.png" alt="">
+                    <ul class="flex gap-14 items-center">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="">Product</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact us</a></li>
+                    </ul>
+                </div>
+            </section>
 
+            <!-- Banner -->
+            <section class="banner-container pt-6 pb-28">
+                <div class="banner flex items-center justify-between">
+                    <div class="banner-content">
+                        <h1 class="text-[#363958] font-bebas text-7xl">
+                            <span class="text-[#FABE4C]">Be the Penguins</span><br>of Winter
+                        </h1>
+                        <p class="max-w-96">Lorem Ipsum is simply dummy text of the printing 
+                            and typesetting industry.</p>
+                        <button class="btn-primary">BUY NOW</button>
+                    </div>
+                    <img src="images/model.png" alt="">
+                </div>
+            </section>
+        </div>
     </header>
 
     <!-- Main -->
@@ -24,6 +69,7 @@
     <footer>
 
     </footer>
-    
+
 </body>
+
 </html>
